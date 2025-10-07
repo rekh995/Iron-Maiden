@@ -1,0 +1,101 @@
+<!-- iron-maiden-mock.html
+     Save as a .html file and open in your browser to preview.
+     Minimal, responsive landing mockup. -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Iron Maiden — Atelier</title>
+<style>
+  :root{
+    --bg:#0b0b0b; --muted:#1f1f1f; --paper:#ece6df; --accent:#7a8a65;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--paper);font-family:var(--sans);line-height:1.45}
+  header{min-height:70vh;display:grid;align-items:center;padding:48px;overflow:hidden}
+  .nav{display:flex;gap:20px;justify-content:flex-end;font-size:14px;opacity:.9}
+  .brand{font-family:"Georgia", serif;font-size:48px;letter-spacing:4px}
+  .lead{max-width:720px;margin-top:16px;color:#d9d4cc;font-size:18px}
+  .cta-row{margin-top:28px;display:flex;gap:12px}
+  .btn{padding:12px 18px;border:1px solid var(--paper);background:transparent;color:var(--paper);text-decoration:none;font-weight:600}
+  .btn.ghost{border-color:rgba(255,255,255,.12);opacity:.95}
+  .grid{display:grid;grid-template-columns:1fr 420px;gap:40px;padding:48px}
+  .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:8px}
+  .product-title{font-family:"Georgia", serif;font-size:20px;margin:0}
+  footer{padding:36px 48px;color:#bdb6ae;font-size:14px;border-top:1px solid rgba(255,255,255,.03)}
+  @media(max-width:900px){
+    .grid{grid-template-columns:1fr; padding:20px}
+    .nav{justify-content:center}
+    .brand{font-size:36px;text-align:center}
+    header{padding:28px}
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav class="nav" aria-label="main navigation">
+    <div style="margin-right:auto;font-size:14px;color:#bdb6ae">IRON MAIDEN</div>
+    <div>Atelier &nbsp; Collections &nbsp; Lookbook &nbsp; Contact</div>
+  </nav>
+
+  <div style="display:flex;gap:40px;align-items:center;flex-wrap:wrap">
+    <div>
+      <div class="brand">IRON MAIDEN</div>
+      <p class="lead">Slow-made garments and curated objects — where craftsmanship meets narrative. Each piece is numbered and made in limited runs.</p>
+      <div class="cta-row">
+        <a class="btn" href="#">Explore the Atelier</a>
+        <a class="btn ghost" href="#">Book an Appointment</a>
+      </div>
+    </div>
+
+    <div style="width:420px">
+      <div class="card">
+        <p style="margin:0;color:#bdb6ae;font-size:13px">Featured</p>
+        <h3 class="product-title">The Maiden Trench</h3>
+        <p style="margin:8px 0;color:#d9d4cc">Heavy moleskin trench with cast-brass closures. Run: 18 pieces.</p>
+        <a class="btn" href="#" style="margin-top:10px;display:inline-block">Request Fit Consultation</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="grid" aria-label="collections overview">
+  <div>
+    <h2 style="font-family:'Georgia',serif;margin-top:0">Nocturne — Spring 2026</h2>
+    <p style="color:#cfc6be">A study in deep contrast: tailored silhouettes, tactile surfaces, and hardware that collects a life.</p>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px">
+      <div class="card"><strong>Maiden Trench</strong><div style="font-size:13px;color:#bdb6ae">AED 2,950 • 18 runs</div></div>
+      <div class="card"><strong>Cargo Hem Dress</strong><div style="font-size:13px;color:#bdb6ae">AED 1,450 • 22 runs</div></div>
+      <div class="card"><strong>Foundry Belt</strong><div style="font-size:13px;color:#bdb6ae">AED 350 • 120 runs</div></div>
+      <div class="card"><strong>Patchwork Knit</strong><div style="font-size:13px;color:#bdb6ae">AED 890 • 50 runs</div></div>
+    </div>
+  </div>
+
+  <aside>
+    <div class="card">
+      <h4 style="margin:0">Visit the Atelier</h4>
+      <p style="color:#cfc6be;margin-top:6px">Book an appointment for a private viewing and fitting. Limited slots each month.</p>
+      <div style="margin-top:12px"><a class="btn" href="#">Request Bespoke</a></div>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <h4 style="margin:0">Journal</h4>
+      <p style="color:#cfc6be;margin-top:6px">On Material Memory — a photo essay.</p>
+      <div style="margin-top:12px"><a class="btn ghost" href="#">Read</a></div>
+    </div>
+  </aside>
+</section>
+
+<footer>
+  <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+    <div>
+      <div style="font-weight:700">IRON MAIDEN</div>
+      <div style="margin-top:6px">hello@ironmaidenatelier.com • +971 4 000 0000</div>
+    </div>
+    <div style="color:#bdb6ae">21 Foundry Lane, Al Majaz, Sharjah • Instagram @ironmaiden.atelier</div>
+  </div>
+</footer>
+</body>
+</html>
